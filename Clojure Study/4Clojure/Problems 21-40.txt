@@ -1,0 +1,30 @@
+Problem 21:
+
+Write a function which returns the Nth element from a sequence.
+(= (__ '(4 5 6 7) 2) 6)
+(= (__ [:a :b :c] 0) :a)	
+(= (__ [1 2 3 4] 1) 2)
+(= (__ '([1 2] [3 4] [5 6]) 2) [5 6])
+
+(fn getAtN[x n](get (into [] x) n))
+
+You can pass in multiple variables to a function, works very similarly to the function in Problems 19 and 20 for further info look at those. 
+
+(= ((fn getAtN[x n](get (into [] x) n)) '(4 5 6 7) 2) 6)
+(= ((fn getAtN[x n](get (into [] x) n)) [:a :b :c] 0) :a)	
+(= ((fn getAtN[x n](get (into [] x) n)) [1 2 3 4] 1) 2)
+(= ((fn getAtN[x n](get (into [] x) n)) '([1 2] [3 4] [5 6]) 2) [5 6])
+
+Problem 22:
+
+Write a function which returns the total number of elements in a sequence.
+
+(= (__ '(1 2 3 3 1)) 5)
+(= (__ "Hello World") 11)
+(= (__ [[1 2] [3 4] [5 6]]) 3)
+(= (__ '(13)) 1)
+(= (__ '(:a :b :c)) 3)
+
+
+
+
